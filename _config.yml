@@ -1,0 +1,14 @@
+#Settings for the site
+name: Html cells system
+title:  Html cells system
+description: New system to align site elements with cells.
+baseurl: "https://hiJen14.github.io/html-cells"
+
+#site - variablen for properties cells on a page.
+totalMainCells: 20
+cellsOnRow: 10
+DebugModus: true
+
+#Build settings
+markdown: kramdown
+permalink: pretty

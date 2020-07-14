@@ -1,0 +1,83 @@
+#jeklly Object with info about
+# - width in points of percentage (1x, 6x, etc.)
+
+  - name: cell_01
+    width: 1
+    height: ""
+    lockedHeight: 0
+  - name: cell_02
+    width: 1
+    height: ""
+    lockedHeight: 0
+  - name: cell_03
+    width: 1
+    height: ""
+    lockedHeight: 0
+  - name: cell_04
+    width: 1
+    height: ""
+    lockedHeight: 0
+  - name: cell_05
+    width: 1
+    height: ""
+    lockedHeight: 0
+  - name: cell_06
+    width: 1
+    height: ""
+    lockedHeight: 1
+  - name: cell_07
+    width: 1
+    height: ""
+    lockedHeight: 1
+  - name: cell_08
+    width: 6
+    height: ""
+    lockedHeight: 1
+  - name: cell_09
+    width: 1
+    height: ""
+    lockedHeight: 1
+  - name: cell_10
+    width: 1
+    height: ""
+    lockedHeight: 1
+  - name: cell_11
+    width: 1
+    height: "15"
+    lockedHeight: 0
+  - name: cell_12
+    width: 1
+    height: "15"
+    lockedHeight: 0
+  - name: cell_13
+    width: 1
+    height: "15"
+    lockedHeight: 0
+  - name: cell_14
+    width: 1
+    height: "15"
+    lockedHeight: 0
+  - name: cell_15
+    width: 1
+    height: "15"
+    lockedHeight: 0
+  - name: cell_16
+    width: 1
+    height: "15"
+    lockedHeight: 1
+  - name: cell_17
+    width: 1
+    height: "15"
+    lockedHeight: 1
+  - name: cell_18
+    width: 1
+    height: "15"
+    lockedHeight: 1
+  - name: cell_19
+    width: 1
+    height: "15"
+    lockedHeight: 1
+  - name: cell_20
+    width: 1
+    height: "15"
+    lockedHeight: 1

@@ -1,0 +1,9 @@
+<!-- Making all cells of a row dynamicly (at compile time, jeklly website is static)-->
+{% for i in (1..site.totalMainCells) %}
+		{%  assign cellCounter = cellCounter | plus: 1 %}
+		<div class="cell" id="cell{{ cellCounter }}">
+			<p>cellCounter {{ cellCounter }}<p>
+
+			{% include cellsData/dataSystem.html %}
+		</div>
+{% endfor %}

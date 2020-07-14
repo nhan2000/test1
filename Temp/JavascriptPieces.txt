@@ -1,0 +1,64 @@
+ /*window.onload = function myFunction()
+    {
+        var cellID = document.getElementById("cell1");
+        console.log(cellID.outerHTML);
+    };*/
+	
+   ********************************************************************
+	
+	//Read XML file
+    /*var xmlCellConfig = "";
+    var objXMLHttpRequest = new XMLHttpRequest();
+    objXMLHttpRequest.onreadystatechange = function () 
+	{
+		if (objXMLHttpRequest.readyState == 4 && objXMLHttpRequest.status == 200) 
+		{
+			xmlCellConfig = objXMLHttpRequest.responseXML;
+			console.log(xmlCellConfig);
+        }
+    };
+    objXMLHttpRequest.open("GET", xmlUrl, true);
+    objXMLHttpRequest.send();
+	
+	var parser, xml;
+	//All browsers 
+	if (window.DOMParser) 
+	{
+		parser = new DOMParser();
+		xml = parser.parseFromString(xmlCellConfig, 'text/xml');
+	}
+	else 
+	{ // For internet explorer
+		xml = new ActiveXObject('Microsoft.XMLDOM');
+		xml.async = false;
+		xml.loadXML(xmlCellConfig);
+	}
+
+	var nodes = xml.getElementsByTagName('cell');
+	
+	console.log(nodes);
+
+	var answers = [];
+	var lengthNodes = nodes.length;
+	for (var i = 0; i < lengthNodes; i++) 
+	{
+		answers.push(nodes[i].childNodes[0].nodeValue);
+	}
+
+	console.log(answers);*/
+	
+	********************************************************************
+
+	/* Do it with element widths **
+	var screenWidth = document.body.offsetWidth;
+	
+	for (i = 1; i <= cellsOnRow; i++) 
+    {
+		
+		
+		console.log(window.innerWidth);
+		if(percentageOfElement)
+		console.log(document.getElementById("cell" + i.toString()).getBoundingClientRect().width + " " + document.getElementById("cell" + i.toString()).offsetWidth);
+		
+    }
+	*/

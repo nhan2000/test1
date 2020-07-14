@@ -1,0 +1,70 @@
+{% assign cellCounter = 0 %}
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head onload="Mobile()" onresize="Mobile()">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="{{ '/assets/css/mainStyle.css?v=' | prepend: site.baseurl | append: site.github.build_revision }}" type="text/css">
+	<noscript>
+		<link rel="stylesheet" href="{{ '/assets/css/noScriptStyle.css?v=' | prepend: site.baseurl | append: site.github.build_revision }}" type="text/css">
+	</noscript>
+	  
+		<title>{{ site.siteName }} </title>
+		<meta name="generator" content="Jekyll v3.8.5" />
+		<meta property="og:title" content="Jennifer, HiJen14" />
+		<meta property="og:locale" content="en_US" />
+		<meta name="description" content="hiJen14 pages" />
+		<meta property="og:description" content="hiJen14 pages" />
+		<link rel="canonical" href="https://hijen14.github.io/" />
+		<meta property="og:url" content="https://hijen14.github.io/" />
+		<meta property="og:site_name" content="Jennifer, HiJen14" />
+			<script type="application/ld+json">
+			{
+    			"@context": "http://schema.org",
+    			"@type": "WebSite",
+    			"url": "https://hijen14.github.io/",
+    			"name": “Jennifer, HiJen14”,
+    			"description": “”
+			}
+			</script>
+
+  </head>
+  <body onload="InitializeCells(false)" onresize="InitializeCells(true)">
+	  {% include cells/cell.html %}
+	  
+	  <script type="text/javascript">
+		  /* Giving all variablen from _config to javascript */
+		  /***************************************************/
+		  
+		  /*Mobile*/
+		  var mobileCSSLink = "{{ '/assets/css/mobileStyle.cssv=' | prepend: site.baseurl | append: site.github.build_revision }}";
+		  
+		  /*ScaleCells*/
+		  var debugModus = {{site.DebugModus}};
+		  var totalMainCells = {{ site.totalMainCells }}; 
+		  var cellsOnRow = {{ site.cellsOnRow }};
+		  /* Cell data from jekyll (liquid) to JS arrays */
+			var widthCells = [];
+			var heightCells = [];
+			var lockedCells = [];
+			{% for cellConfig in site.data.cells.ConfigureCells %}
+				 var myWidth{{forloop.index}} = '{{ cellConfig.width | json }}';		
+				 widthCells.push(myWidth{{forloop.index}});
+				 console.log(widthCells);
+			{% endfor %}
+			{% for cellConfig in site.data.cells.ConfigureCells %}
+				 var myHeight{{forloop.index}} = '{{ cellConfig.height | json }}';		
+				 heightCells.push(myHeight{{forloop.index}});
+				 console.log(heightCells);
+			{% endfor %}
+			{% for cellConfig in site.data.cells.ConfigureCells %}
+				 var myLocked{{forloop.index}} = '{{ cellConfig.lockedHeight | json }}';		
+				 lockedCells.push(myLocked{{forloop.index}});
+				 console.log(lockedCells);
+			{% endfor %}
+  	</script>
+	<script type="text/javascript" src={{ "/scripts/scaleCells.js" | prepend: site.baseurl }}></script>
+	<script type="text/javascript" src={{ "/scripts/mobile.js" | prepend: site.baseurl }}></script>
+  </body>
+</html>

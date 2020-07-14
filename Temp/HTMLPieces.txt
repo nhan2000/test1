@@ -1,0 +1,21 @@
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+      		/*var cellsWidth = [
+			{% for cellConfig in site.data.cells.ConfigureCells %}
+			{% if cellConfig == empty %}
+			    {{ "", }}
+			{% else %}
+				{{ cellConfig.width }},
+			{% endif %}
+				{% if forloop.last == true %}
+  					{% if cellConfig %}
+						""
+					{% else %}
+						{{ cellConfig.width }}
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		];*/
